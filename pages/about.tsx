@@ -9,19 +9,19 @@ const AboutPage = () => (
         <Image src={Hero2} layout="responsive" />
       </div>
     </div>
-    <section className="mx-auto px-20">
+    <section className="mx-auto px-5 md:px-20">
       <div id="about_description" className="relative card drop-shadow-lg rounded-md -top-10 bg-white p-10 max-w-max">
         {/* simple intro */}
         <div className="grid grid-col-1 md:flex w-auto ">
-          <div className="image w-[50%] flex">
-            <div className="green-card w-80 absolute h-[30rem] rounded-md items-start"></div>
-            <div className="about-image w-80 ml-20 mt-20 absolute z-10">
+          <div className="image w-full md:w-[50%] flex">
+            <div className="green-card absolute max-w-80 w-1/2 md:w-80 max-h-[30rem] h-1/2 md:h-[30rem] rounded-md items-start"></div>
+            <div className="about-image md:w-80 w-1/2 mx-auto right-0 left-0 md:ml-32 mt-20 absolute top-0 bottom-0 z-10">
               <Image src={ImgTextAbout} layout="responsive" className=" relative rounded-md" />
             </div>
-            <div className="bluelight-card opacity-25 w-80 mt-40 ml-40 right-0 h-[30rem] rounded-md items-end"></div>
+            <div className="bluelight-card opacity-25 max-w-80 w-1/2 md:w-80 max-h-[30rem] h-screen md:h-[30rem] rounded-md items-end mt-24 ml-auto md:ml-40 "></div>
           </div>
-          <div className="p-10 max-w-[50%]">
-            <p className="text-gray-500 text-2xl font-abel py-40">
+          <div className="p-10 w-full md:w-[50%]">
+            <p className="text-gray-500 text-2xl font-abel py-40 text-center md:text-left">
               Infinita is built by two individuals who share the same vision about mental health. Both of them want Indonesian people more awareness in mental health issues because mental health has the same amount of risk as any other
               medical diseases. Based on this vision, they establish Infinita in order to educate and treat people with sufficient clinical psychology methods such as: psychoanalysis, behavioral intervention, Cognitive Behavior Therapy,
               etc.
