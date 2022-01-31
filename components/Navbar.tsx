@@ -6,8 +6,8 @@ import Image from "next/image";
 import { Logo, LogoCut } from "../public/assets";
 
 const navigation = [
-  { name: "Home", href: "#topsection" },
-  { name: "About", href: "#intro" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
   { name: "Service", href: "#layanan" },
   { name: "Blog", href: "#blog" },
 ];

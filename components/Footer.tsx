@@ -5,7 +5,7 @@ import { LogoCut } from "../public/assets";
 class Footer extends Component {
   render() {
     return (
-      <div>
+      <div className="bottom-0 left-0 right-0">
         <div className="bg-gray-700">
           <div className="container px-20 w-full">
             <div className="grid grid-col-1 md:grid-cols-3 md:gap-4">

@@ -20,7 +20,7 @@ const cardcontent = [
 const Cards: any = [];
 cardcontent.forEach((item) => {
   Cards.push(
-    <div key={item.key} className="card my-10 drop-shadow-lg flex flex-col bg-white rounded-md p-5 max-w-max w-72 mt-10 mb-20 md:mb-0">
+    <div key={item.key} className="card my-10 drop-shadow-lg flex flex-col bg-white rounded-md p-8 max-w-max w-72 mt-10 mb-20 md:mb-0">
       <div className="absolute mb-3 -top-16 self-center flex max-w-md bg-white p-5 rounded-full justify-center drop-shadow-md w-24">
         <Image src={item.icon} width={100} height={100} />
       </div>

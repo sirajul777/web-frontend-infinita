@@ -40,6 +40,13 @@ module.exports = {
           "background-attachment": "fixed",
           "background-position": "center",
         },
+        ".bg-hero2": {
+          background: "url(/assets/img/hero2.jpg)",
+          "background-repeat": "no-repeat",
+          "background-size": "cover",
+          "background-attachment": "fixed",
+          "background-position": "center",
+        },
         ".bg-paralax": {
           background: "url(/assets/img/abstract.jpg)",
           "background-repeat": "no-repeat",
@@ -70,6 +77,12 @@ module.exports = {
         },
         ".bg-custom": {
           "background-color": "#fef3c7",
+        },
+        ".green-card": {
+          "background-color": "#AAFA9E",
+        },
+        ".bluelight-card": {
+          "background-color": "#2DF641",
         },
       };
       addUtilities(hero);
