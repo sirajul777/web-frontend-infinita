@@ -16,7 +16,7 @@ class Footer extends Component {
                 <h1 className=" text-2xl font-medium text-center md:text-left">Our Location</h1>
                 <div className="flex md:justify-between flex-col md:flex-row justify-center">
                   <button
-                    className="w-20 md:w-40 right-0 left-0 my-auto pointer-events-auto mx-auto md:mx-0"
+                    className="w-10 md:w-40 right-0 left-0 my-auto pointer-events-auto mx-auto md:mx-0"
                     onClick={() => {
                       window.open("https://goo.gl/maps/T4zD4kf7LS2g1vd5A");
                     }}
