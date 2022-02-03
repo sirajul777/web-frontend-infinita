@@ -12,7 +12,7 @@ class Footer extends Component {
               <div className="gap-4 md:p-10 p-2 grid place-items-center">
                 <Image src={LogoCut} alt="infinita logo" />
               </div>
-              <div className="flex flex-col py-14 px-5 md:px-10 text-white">
+              <div className="flex flex-col md:py-14 py-5 px-5 md:px-10 text-white">
                 <h1 className=" text-2xl font-medium text-center md:text-left">Our Location</h1>
                 <div className="flex md:justify-between flex-col md:flex-row justify-center">
                   <button
@@ -28,7 +28,7 @@ class Footer extends Component {
                   <p className=" text-sm p-5 text-center md:text-left">Ruko Golden 8, Jl. Ki Hajar Dewantara Jl. Boulevard Raya Gading Serpong, West Pakulonan, Kelapa Dua, Tangerang Regency, Banten 15810</p>
                 </div>
               </div>
-              <div className="flex flex-col py-14 px-10 md:text-left text-white">
+              <div className="flex flex-col md:py-14 py-5 px-10 md:text-left text-white">
                 <h1 className=" text-2xl font-medium text-center md:text-left">Contact</h1>
                 <ul className="list-disc py-5 px-10 md:px-0">
                   <li>Telp : 021-22227599</li>
