@@ -5,9 +5,9 @@ import { LogoCut } from "../public/assets";
 class Footer extends Component {
   render() {
     return (
-      <div className="bottom-0 left-0 right-0">
+      <div className="bottom-0 left-0 right-0 relative">
         <div className="bg-gray-700">
-          <div className="container px-20 w-full">
+          <div className="container md:px-20 w-full">
             <div className="grid grid-col-1 md:grid-cols-3 md:gap-4">
               <div className="gap-4 p-10 grid place-items-center">
                 <Image src={LogoCut} />
@@ -23,10 +23,10 @@ class Footer extends Component {
               </div>
               <div className="flex flex-col py-14 px-10 md:text-left text-white">
                 <h1 className=" text-2xl font-medium text-center md:text-left">Contact</h1>
-                <ul className="list-disc py-5">
+                <ul className="list-disc py-5 px-10 md:px-0">
                   <li>Telp : 021-22227599</li>
                   <li>Email : info@infinitaconceling.org</li>
-                  <li>WA : +62812-1231-7076</li>
+                  <li>WA : +62 812-1231-7076</li>
                 </ul>
               </div>
             </div>

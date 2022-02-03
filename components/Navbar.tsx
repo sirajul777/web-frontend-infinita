@@ -8,8 +8,8 @@ import { Logo, LogoCut } from "../public/assets";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Service", href: "#layanan" },
-  { name: "Blog", href: "#blog" },
+  { name: "Service", href: "/service" },
+  { name: "Blog", href: "/blog" },
 ];
 
 export default function Navbar() {
