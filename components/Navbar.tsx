@@ -22,7 +22,7 @@ export default function Navbar() {
               <Link href="/">
                 <a className="sm:h-20 w-32 md:w-40 md:py-3" aria-current="page">
                   <span className="sr-only">Workflow</span>
-                  <Image src={Logo} className="aspect-auto md:w-[200px] sm:max-w-2xl sm:w-[20px]" alt="Infinita Conceling" />
+                  <Image src={Logo} className="aspect-auto md:w-[200px] sm:max-w-2xl sm:w-[20px]" alt="Infinita Conceling Logo" />
                 </a>
               </Link>
             </div>
@@ -50,8 +50,8 @@ export default function Navbar() {
           </div>
         </div>
 
-        <Transition as={Fragment} enter="duration-200 ease-out" enterFrom="opacity-0 scale-95" enterTo="opacity-100 scale-100" leave="duration-100 ease-in" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95">
-          <Popover.Panel focus className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <Transition as={Fragment} enter="duration-500 ease-out" enterFrom="opacity-0 scale-95" enterTo="opacity-100 scale-100" leave="duration-300 ease-in" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95">
+          <Popover.Panel focus className="absolute z-10 top-0 inset-x-0 transition transform origin-top-right md:hidden">
             <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
               <div className="pt-5 pb-6 px-5">
                 <div className="flex items-center justify-between">

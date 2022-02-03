@@ -10,7 +10,7 @@ class Footer extends Component {
           <div className="container md:px-20 w-full">
             <div className="grid grid-col-1 md:grid-cols-3 md:gap-4">
               <div className="gap-4 p-10 grid place-items-center">
-                <Image src={LogoCut} />
+                <Image src={LogoCut} alt="infinita logo" />
               </div>
               <div className="flex flex-col py-14 px-5 md:px-10 text-white">
                 <h1 className=" text-2xl font-medium text-center md:text-left">Our Location</h1>
