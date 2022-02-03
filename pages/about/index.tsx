@@ -45,11 +45,11 @@ const AboutPage = () => (
         </div>
       </div>
     </section>
-    <div className="bg-paralax relative -top-12">
+    {/* <div className="bg-paralax relative -top-12">
       <p className="oke">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore nihil a deleniti itaque corrupti voluptates voluptatum quibusdam ut veniam, doloremque quasi fuga minima dicta esse, excepturi exercitationem fugiat sed. Fugiat.
       </p>
-    </div>
+    </div> */}
   </Layout>
 );
 
