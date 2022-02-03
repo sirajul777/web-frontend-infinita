@@ -7,9 +7,9 @@ class Footer extends Component {
     return (
       <div className="bottom-0 left-0 right-0 relative -mt-10">
         <div className="bg-gray-700">
-          <div className="container md:px-20 w-full">
+          <div className="container md:px-20 px-5 w-full">
             <div className="grid grid-col-1 md:grid-cols-3 md:gap-4">
-              <div className="gap-4 p-10 grid place-items-center">
+              <div className="gap-4 md:p-10 p-2 grid place-items-center">
                 <Image src={LogoCut} alt="infinita logo" />
               </div>
               <div className="flex flex-col py-14 px-5 md:px-10 text-white">
