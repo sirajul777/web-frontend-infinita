@@ -21,7 +21,7 @@ const AboutPage = () => (
             <div className="bluelight-card opacity-25 max-w-80 w-1/2 md:w-80 max-h-[30rem] h-screen md:h-[30rem] rounded-md items-end mt-24 ml-auto md:ml-40 "></div>
           </div>
           <div className="p-10 w-full md:w-[50%]">
-            <p className="text-gray-500 text-2xl font-abel py-40 text-center md:text-left">
+            <p className="text-gray-500 text-2xl font-abel py-32 text-center md:text-left">
               Infinita is built by two individuals who share the same vision about mental health. Both of them want Indonesian people more awareness in mental health issues because mental health has the same amount of risk as any other
               medical diseases. Based on this vision, they establish Infinita in order to educate and treat people with sufficient clinical psychology methods such as: psychoanalysis, behavioral intervention, Cognitive Behavior Therapy,
               etc.
@@ -32,7 +32,7 @@ const AboutPage = () => (
         <div className="this_about">
           <div className="p-20">
             <div className="border-4 p-5 border-primary border-dashed">
-              <p className="text-gray-500 text-2xl font-abel">
+              <p className="text-gray-500 text-2xl font-abel text-justify">
                 Infinita Center is a psychological development center based in Tangerang, Gading Serpong, founded by a Clinical Psychologist, Elly Wulandari, and a Special Education Practitioner, Joan Mareti Gading in 2010. We provide broad
                 service from counseling, psychotherapy, employee assistance program (EAP), until behavior and educational management for children to adult with and without neurodiversity. Our clinical psychologist is legally registered as
                 mental health professional with STR (Surat Tanda Regristrasi) from Indonesian Health Ministry (Majelis Tenaga Kesehatan Indonesia) and clinical practice license from HIMPSI (Indonesian Psychology Association) and under IPK

@@ -34,8 +34,8 @@ export default function Navbar() {
             </div>
             <Popover.Group as="nav" className="hidden md:flex space-x-10">
               {navigation.map((item) => (
-                <Link href={item.href}>
-                  <a id={item.name} key={item.name} className={`md:w-auto text-primary font-extralight text-xl tracking-widest top-3 relative group`}>
+                <Link href={item.href} key={item.name}>
+                  <a id={item.name} className={`md:w-auto text-primary font-extralight text-xl tracking-widest top-3 relative group`}>
                     {item.name}
                     <div className="absolute w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition duration-300"></div>
                   </a>
