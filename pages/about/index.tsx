@@ -18,7 +18,7 @@ const AboutPage = () => (
             <div className="about-image md:w-80 w-2/3 mx-auto right-0 left-0 md:ml-32 mt-14 absolute md:top-0 top-1 bottom-0 z-10">
               <Image src={ImgTextAbout} layout="responsive" className=" relative rounded-md" />
             </div>
-            <div className="bluelight-card opacity-25 max-w-80 w-2/3 md:w-80 max-h-[30rem] h-[20rem] md:h-[30rem] rounded-md items-end md:mt-24 mt-14 ml-auto md:ml-40 "></div>
+            <div className="bluelight-card opacity-25 max-w-80 w-2/3 md:w-80 max-h-[30rem] h-[24rem] md:h-[30rem] rounded-md items-end md:mt-24 mt-14 ml-auto md:ml-40 "></div>
           </div>
           <div className="md:p-10 px-2 md:px-0 w-full md:w-[50%]">
             <p className="text-gray-500 md:text-2xl text-lg font-abel py-32 text-center md:text-left">
