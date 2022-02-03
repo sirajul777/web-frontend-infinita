@@ -24,7 +24,7 @@ cardcontent.forEach((item) => {
       <div className="absolute mb-3 -top-16 self-center flex max-w-md bg-white p-5 rounded-full justify-center drop-shadow-md w-24">
         <Image src={item.icon} width={100} height={100} />
       </div>
-      <h1 className="text-gray-600 capitalize text-center font-medium text-3xl mt-5">{item.names}</h1>
+      <h1 className="text-gray-600 capitalize text-center font-medium md:text-3xl text-xl mt-5">{item.names}</h1>
       <p className="text-gray-700 font-xl text-center py-5">{item.content}</p>
     </div>
   );
@@ -61,7 +61,7 @@ const IndexPage = () => (
         {/* quotes section */}
         <div className="quotes-section flex justify-center justify-items-center py-20">
           <div className="text-primary font-medium font-abel text-3xl max-w-3xl text-center border-4 border-primary p-4 item-center">
-            <span className="h-1 text-primary font-roboto text-5xl">"</span>
+            <span className="h-1 text-primary font-roboto md:text-5xl text-2xl">"</span>
             THE GOOD LIFE IS A PROCESS, NOT A STATE OF BEING . . . IT IS A DIRECTION NOT A DESTINATION
             <span className="h-1 text-primary font-roboto text-5xl">"</span>
             <p className="font-pusher italic text-lg capitalize">carl rogers</p>
@@ -73,7 +73,7 @@ const IndexPage = () => (
     {/* vision & mission content */}
     <section id={sections[1]} className="bg-paralax">
       <div className="container mx-auto px-5 py-5">
-        <h1 className="text-gray-800 text-center capitalize font-medium text-3xl bottom-5">our vision and mission</h1>
+        <h1 className="text-gray-700 text-center capitalize font-bold md:text-3xl text-xl bottom-5">our vision and mission</h1>
         <div className="md:flex md:justify-around py-10 grid grid-cols-1 justify-items-center px-5">{Cards}</div>
       </div>
     </section>
