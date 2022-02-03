@@ -14,11 +14,11 @@ const AboutPage = () => (
         {/* simple intro */}
         <div className="grid grid-col-1 md:flex w-auto ">
           <div className="image w-full md:w-[50%] flex">
-            <div className="green-card absolute z-10 max-w-80 w-1/2 md:w-80 md:max-h-[30rem] max-h-[20rem] h-screen md:h-[30rem] rounded-md items-start"></div>
-            <div className="about-image md:w-80 w-2/3 mx-auto right-0 left-0 md:ml-32 mt-14 absolute md:top-0 top-1 bottom-0 z-10">
-              <Image src={ImgTextAbout} layout="responsive" className=" relative rounded-md" />
+            <div className="green-card absolute z-10 max-w-80 w-[5rem] md:w-80 md:max-h-[30rem] max-h-[20rem] h-[5rem] md:h-[30rem] rounded-md items-start"></div>
+            <div className="about-image md:w-80 max-w-xl w-2/3 mx-auto right-0 left-0 md:ml-32 mt-14 absolute md:top-0 top-1 bottom-0 z-10">
+              <Image src={ImgTextAbout} layout="responsive" className="relative rounded-md" />
             </div>
-            <div className="bluelight-card opacity-25 relative max-w-80 w-2/3 md:w-80  md:max-h-[30rem] max-h-[20rem] h-screen md:h-[30rem] rounded-md items-end md:mt-10 mt-14 ml-auto md:ml-40 "></div>
+            <div className="bluelight-card opacity-25 relative max-w-80 w-[5rem] md:w-80 md:max-h-[30rem] max-h-[30rem] h-[5rem] md:h-[30rem] rounded-md items-end md:mt-10 mt-[100%] top-10 md:top-0 ml-auto md:ml-40 "></div>
           </div>
           <div className="md:p-10 px-2 md:px-0 w-full md:w-[50%]">
             <p className="text-gray-500 md:text-2xl text-lg font-abel py-32 text-center md:text-left">

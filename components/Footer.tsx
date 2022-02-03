@@ -15,9 +15,16 @@ class Footer extends Component {
               <div className="flex flex-col py-14 px-5 md:px-10 text-white">
                 <h1 className=" text-2xl font-medium text-center md:text-left">Our Location</h1>
                 <div className="flex md:justify-between flex-col md:flex-row justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-20 md:w-40 right-0 left-0 mx-auto md:mx-0" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                  </svg>
+                  <button
+                    className="w-20 md:w-40 right-0 left-0 my-auto pointer-events-auto mx-auto md:mx-0"
+                    onClick={() => {
+                      window.open("https://goo.gl/maps/T4zD4kf7LS2g1vd5A");
+                    }}
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                    </svg>
+                  </button>
                   <p className=" text-sm p-5 text-center md:text-left">Ruko Golden 8, Jl. Ki Hajar Dewantara Jl. Boulevard Raya Gading Serpong, West Pakulonan, Kelapa Dua, Tangerang Regency, Banten 15810</p>
                 </div>
               </div>
