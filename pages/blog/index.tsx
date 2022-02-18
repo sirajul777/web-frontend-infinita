@@ -12,6 +12,9 @@ class index extends Component {
             <Image src={Hero2} layout="responsive" />
           </div>
         </div>
+
+        {/* article section */}
+        <section></section>
       </Layout>
     );
   }

@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
@@ -6,13 +6,39 @@ import Image from "next/image";
 import { Logo, LogoCut } from "../public/assets";
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Service", href: "/service" },
-  { name: "Blog", href: "/blog" },
+  { name: "Home", href: "/", current: true },
+  { name: "About", href: "/about", current: false },
+  { name: "Service", href: "/service", current: false },
+  { name: "Blog", href: "/blog", current: false },
 ];
 
 export default function Navbar() {
+  function classNames(...classes: any[]) {
+    return classes.filter(Boolean).join(" ");
+  }
+
+  let pageset = () => {
+    let windowslocation = window.location.pathname;
+    const search = (loc: String, arr: any) => {
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i].href === loc) {
+          return (arr[i].current = true);
+        }
+      }
+    };
+
+    let result = search(windowslocation, navigation);
+    console.log(navigation);
+    return result;
+  };
+
+  useEffect(() => {
+    window.addEventListener("load", pageset);
+    return () => {
+      window.removeEventListener("load", pageset);
+    };
+  }, []);
+
   return (
     <div className="absolute w-full z-50">
       <Popover className="bg-amber-100 ">
@@ -33,11 +59,30 @@ export default function Navbar() {
               </Popover.Button>
             </div>
             <Popover.Group as="nav" className="hidden md:flex space-x-10">
-              {navigation.map((item) => (
+              {navigation.map((item, index) => (
                 <Link href={item.href} key={item.name}>
-                  <a id={item.name} className={`md:w-auto text-primary font-extralight text-xl tracking-widest top-3 relative group`}>
+                  <a
+                    id={item.name}
+                    className={`md:w-auto text-primary font-extralight text-xl tracking-widest top-3 relative group`}
+                    aria-current={item.current ? "page" : undefined}
+                    onClick={() => {
+                      let windows = window.location.pathname;
+                      navigation.forEach((items) => {
+                        if (windows == items.href) {
+                          items.current = false;
+                          navigation[index].current = true;
+                        }
+                      });
+                    }}
+                  >
                     {item.name}
-                    <div className="absolute w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition duration-300"></div>
+                    <div
+                      className={classNames(
+                        item.current
+                          ? `indicators absolute w-full h-0.5 hover:bg-amber-700  group-hover:scale-x-100 transition duration-300`
+                          : `indicators absolute scale-x-0 w-full h-0.5 bg-primary  group-hover:scale-x-100 transition duration-300`
+                      )}
+                    ></div>
                   </a>
                 </Link>
               ))}

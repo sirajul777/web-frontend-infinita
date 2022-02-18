@@ -21,7 +21,7 @@ const AboutPage = () => (
             <div className="bluelight-card opacity-25 relative max-w-80 w-[5rem] md:w-80 md:max-h-[30rem] h-[5rem] md:h-[30rem] rounded-md items-end md:mt-10 mt-[100%] top-10 md:top-0 ml-auto md:ml-40 "></div>
           </div>
           <div className="md:p-10 px-2 md:px-0 w-full md:w-[50%]">
-            <p className="text-gray-500 md:text-2xl text-lg font-abel py-32 text-center md:text-left">
+            <p className="text-gray-500 md:text-2xl text-md font-abel py-32 text-center md:text-left">
               Infinita is built by two individuals who share the same vision about mental health. Both of them want Indonesian people more awareness in mental health issues because mental health has the same amount of risk as any other
               medical diseases. Based on this vision, they establish Infinita in order to educate and treat people with sufficient clinical psychology methods such as: psychoanalysis, behavioral intervention, Cognitive Behavior Therapy,
               etc.
@@ -32,13 +32,18 @@ const AboutPage = () => (
         <div className="this_about">
           <div className="md:p-20">
             <div className="border-4 p-5 border-primary border-dashed">
-              <p className="text-gray-500 md:text-2xl font-abel md:text-justify text-center">
+              <p className="text-gray-500 md:text-2xl text-sm font-abel md:text-justify text-center">
                 Infinita Center is a psychological development center based in Tangerang, Gading Serpong, founded by a Clinical Psychologist, Elly Wulandari, and a Special Education Practitioner, Joan Mareti Gading in 2010. We provide broad
-                service from counseling, psychotherapy, employee assistance program (EAP), until behavior and educational management for children to adult with and without neurodiversity. Our clinical psychologist is legally registered as
-                mental health professional with STR (Surat Tanda Regristrasi) from Indonesian Health Ministry (Majelis Tenaga Kesehatan Indonesia) and clinical practice license from HIMPSI (Indonesian Psychology Association) and under IPK
-                (Indonesian Clinical Psychology Association). She has more than 17 years experienced in clinical interventions with various kind of clinical cases. Specialities in psychological assessment and psychotherapy for traumatic
-                problem (PTSD-Post Traumatic Stress Disorder), depression, anxiety, bipolar, obsessive compulsive (OCD), borderline personality, mood/any other emotional disorder. Our senior special education practitioner in special
-                education has more than 18 years experienced. Our team members are bachelor degree in special education and psychology who are able to provide intervention with children and adult with neurodiversity condition.
+                service from counseling, psychotherapy, employee assistance program (EAP), until behavior and educational management for children to adult with and without neurodiversity.
+              </p>
+              <p className="md:inline-block text-gray-500 text-sm  md:text-2xl font-abel md:text-justify text-center">
+                Our clinical psychologist is legally registered as mental health professional with STR (Surat Tanda Regristrasi) from Indonesian Health Ministry (Majelis Tenaga Kesehatan Indonesia) and clinical practice license from HIMPSI
+                (Indonesian Psychology Association) and under IPK (Indonesian Clinical Psychology Association).
+              </p>
+              <p className="text-gray-500 md:text-2xl text-sm font-abel md:text-justify text-center">
+                She has more than 17 years experienced in clinical interventions with various kind of clinical cases. Specialities in psychological assessment and psychotherapy for traumatic problem (PTSD-Post Traumatic Stress Disorder),
+                depression, anxiety, bipolar, obsessive compulsive (OCD), borderline personality, mood/any other emotional disorder. Our senior special education practitioner in special education has more than 18 years experienced. Our team
+                members are bachelor degree in special education and psychology who are able to provide intervention with children and adult with neurodiversity condition.
               </p>
             </div>
           </div>

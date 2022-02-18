@@ -6,14 +6,14 @@ class Footer extends Component {
   render() {
     return (
       <div className="bottom-0 left-0 right-0 relative -mt-10">
-        <div className="bg-gray-700">
+        <div className="bg-amber-100">
           <div className="container md:px-20 px-5 w-full">
             <div className="grid grid-col-1 md:grid-cols-3 md:gap-4">
-              <div className="gap-4 md:p-10 p-2 grid place-items-center">
+              <div className="gap-4 md:p-10 p-5 mx-20 grid place-items-center">
                 <Image src={LogoCut} alt="infinita logo" />
               </div>
-              <div className="flex flex-col md:py-14 py-5 px-5 md:px-10 text-white">
-                <h1 className=" text-2xl font-medium text-center md:text-left">Our Location</h1>
+              <div className="flex flex-col md:py-14 py-5 px-5 md:px-10 text-primary">
+                <h1 className="text-2xl font-medium text-center md:text-left">Our Location</h1>
                 <div className="flex md:justify-between flex-col md:flex-row justify-center">
                   <button
                     className="w-10 md:w-40 right-0 left-0 my-auto pointer-events-auto mx-auto md:mx-0"
@@ -25,10 +25,10 @@ class Footer extends Component {
                       <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                     </svg>
                   </button>
-                  <p className=" text-sm p-5 text-center md:text-left">Ruko Golden 8, Jl. Ki Hajar Dewantara Jl. Boulevard Raya Gading Serpong, West Pakulonan, Kelapa Dua, Tangerang Regency, Banten 15810</p>
+                  <p className="text-sm p-5 text-center md:text-left">Ruko Golden 8, Jl. Ki Hajar Dewantara Jl. Boulevard Raya Gading Serpong, West Pakulonan, Kelapa Dua, Tangerang Regency, Banten 15810</p>
                 </div>
               </div>
-              <div className="flex flex-col md:py-14 py-5 px-10 md:text-left text-white">
+              <div className="flex flex-col md:py-14 py-5 px-10 md:text-left text-primary">
                 <h1 className=" text-2xl font-medium text-center md:text-left">Contact</h1>
                 <ul className="list-disc py-5 px-10 md:px-0">
                   <li>Telp : 021-22227599</li>
@@ -38,6 +38,7 @@ class Footer extends Component {
               </div>
             </div>
           </div>
+          <div className="flex justify-center text-gray-100 bg-primary">&copy; 2022 - {new Date().getFullYear() === 2022 ? "" : new Date().getFullYear()} infinita conseling</div>
         </div>
       </div>
     );
