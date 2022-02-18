@@ -38,7 +38,7 @@ class Footer extends Component {
               </div>
             </div>
           </div>
-          <div className="flex justify-center text-gray-100 bg-primary">&copy; 2022 - {new Date().getFullYear() === 2022 ? "" : new Date().getFullYear()} infinita conseling</div>
+          <div className="flex justify-center text-gray-100 bg-primary p-1">&copy; 2022 - {new Date().getFullYear() === 2022 ? "" : new Date().getFullYear()} infinitaconseling.org | Infinita Psychological Development Center</div>
         </div>
       </div>
     );
