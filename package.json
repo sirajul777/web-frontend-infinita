@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build && tsc --project tsconfig.server.json",
-    "start": "node dist/server.js",
+    "build": "next build",
+    "start": "next start",
     "prestart": "npm run build",
     "prebuild": "tsc"
   },
