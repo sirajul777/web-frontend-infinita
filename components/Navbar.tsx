@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Logo, LogoCut } from "../public/assets";
 
-const navigation = [
+const navigation: any[] = [
   { name: "Home", href: "/", current: true },
   { name: "About", href: "/about", current: false },
   { name: "Service", href: "/service", current: false },
@@ -28,7 +28,6 @@ export default function Navbar() {
     };
 
     let result = search(windowslocation, navigation);
-    console.log(navigation);
     return result;
   };
 
@@ -48,7 +47,20 @@ export default function Navbar() {
               <Link href="/">
                 <a className="sm:h-20 w-32 md:w-40 md:py-3" aria-current="page">
                   <span className="sr-only">Workflow</span>
-                  <Image src={Logo} className="aspect-auto md:w-[200px] sm:max-w-2xl sm:w-[20px]" alt="Infinita Conceling Logo" />
+                  <Image
+                    src={Logo}
+                    className="aspect-auto md:w-[200px] sm:max-w-2xl sm:w-[20px]"
+                    alt="Infinita Conceling Logo"
+                    onClick={() => {
+                      let windows = window.location.pathname;
+                      navigation.forEach((items, index) => {
+                        if (windows == items.href) {
+                          items.current = false;
+                          navigation[index].current = true;
+                        }
+                      });
+                    }}
+                  />
                 </a>
               </Link>
             </div>
@@ -76,13 +88,7 @@ export default function Navbar() {
                     }}
                   >
                     {item.name}
-                    <div
-                      className={classNames(
-                        item.current
-                          ? `indicators absolute w-full h-0.5 hover:bg-amber-700  group-hover:scale-x-100 transition duration-300`
-                          : `indicators absolute scale-x-0 w-full h-0.5 bg-primary  group-hover:scale-x-100 transition duration-300`
-                      )}
-                    ></div>
+                    <div className={classNames(item.current ? `indicators absolute w-full h-0.5 bg-amber-700  scale-x-100 ` : `indicators absolute scale-x-0 w-full h-0.5 bg-primary  group-hover:scale-x-100 transition duration-300`)}></div>
                   </a>
                 </Link>
               ))}

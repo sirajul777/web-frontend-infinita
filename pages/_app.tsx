@@ -1,21 +1,9 @@
 import App from "next/app";
-import "tailwindcss/tailwind.css";
-import "../style/global.css";
+
 import type { AppProps, AppContext } from "next/app";
-import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <>
-      <Head>
-        <meta name="viewport" content="viewport-fit=cover" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="pt lombok sumbawa bersinar adalah perusahaan yang bergerak di bidang konstruksi bangunan" />
-      </Head>
-      <Component {...pageProps} />
-    </>
-  );
+  return <Component {...pageProps} />;
 }
 
 // Only uncomment this method if you have blocking data requirements for

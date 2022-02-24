@@ -7,7 +7,7 @@ const cardcontent = [
     key: 1,
     icon: Brain,
     names: "our vision",
-    content: "As one of clinicalpsychology center in Indonesia who provide integrated, evidencebased, and holistic approach to enhance individual's potential as a person.",
+    content: "As one of clinical psychology center in Indonesia who provide integrated, evidencebased, and holistic approach to enhance individual's potential as a person.",
   },
   {
     key: 2,
