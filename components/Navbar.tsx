@@ -4,9 +4,10 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import Image from "next/image";
 import { Logo, LogoCut } from "../public/assets";
+import { useRouter } from "next/router";
 
 const navigation: any[] = [
-  { name: "Home", href: "/", current: true },
+  { name: "Home", href: "/", current: false },
   { name: "About", href: "/about", current: false },
   { name: "Service", href: "/service", current: false },
   { name: "Blog", href: "/blog", current: false },
@@ -17,26 +18,15 @@ export default function Navbar() {
     return classes.filter(Boolean).join(" ");
   }
 
-  let pageset = () => {
-    let windowslocation = window.location.pathname;
-    const search = (loc: String, arr: any) => {
-      for (let i = 0; i < arr.length; i++) {
-        if (arr[i].href === loc) {
-          return (arr[i].current = true);
-        }
+  const router = useRouter();
+  const search = (loc: String, arr: any) => {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i].href === loc) {
+        return (arr[i].current = true);
       }
-    };
-
-    let result = search(windowslocation, navigation);
-    return result;
+    }
   };
-
-  useEffect(() => {
-    window.addEventListener("load", pageset);
-    return () => {
-      window.removeEventListener("load", pageset);
-    };
-  }, []);
+  search(router.asPath, navigation);
 
   return (
     <div className="absolute w-full z-50">
@@ -44,23 +34,21 @@ export default function Navbar() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="relative flex justify-between items-center  md:justify-end md:space-x-10 md:font-medium sm:font-semibold font-abel">
             <div className="flex justify-start relative lg:w-0 lg:flex-1">
-              <Link href="/">
-                <a className="sm:h-20 w-32 md:w-40 md:py-3" aria-current="page">
+              <Link href={"/"}>
+                <a
+                  className="sm:h-20 w-32 md:w-40 md:py-3"
+                  onClick={() => {
+                    let windows = window.location.pathname;
+                    navigation.forEach((items, index) => {
+                      items.current = false;
+                      if (windows == items.href) {
+                        navigation[index].current = true;
+                      }
+                    }, navigation);
+                  }}
+                >
                   <span className="sr-only">Workflow</span>
-                  <Image
-                    src={Logo}
-                    className="aspect-auto md:w-[200px] sm:max-w-2xl sm:w-[20px]"
-                    alt="Infinita Conceling Logo"
-                    onClick={() => {
-                      let windows = window.location.pathname;
-                      navigation.forEach((items, index) => {
-                        if (windows == items.href) {
-                          items.current = false;
-                          navigation[index].current = true;
-                        }
-                      });
-                    }}
-                  />
+                  <Image src={Logo} className="aspect-auto md:w-[200px] sm:max-w-2xl sm:w-[20px]" alt="Infinita Conceling Logo" />
                 </a>
               </Link>
             </div>
@@ -84,11 +72,15 @@ export default function Navbar() {
                           items.current = false;
                           navigation[index].current = true;
                         }
-                      });
+                      }, navigation);
                     }}
                   >
                     {item.name}
-                    <div className={classNames(item.current ? `indicators absolute w-full h-0.5 bg-amber-700  scale-x-100 ` : `indicators absolute scale-x-0 w-full h-0.5 bg-primary  group-hover:scale-x-100 transition duration-300`)}></div>
+                    <div
+                      className={classNames(
+                        router.asPath == item.href ? `indicators absolute w-full h-0.5 bg-amber-700  scale-x-100 ` : `indicators absolute scale-x-0 w-full h-0.5 bg-primary  group-hover:scale-x-100 transition duration-300`
+                      )}
+                    ></div>
                   </a>
                 </Link>
               ))}

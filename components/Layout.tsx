@@ -12,7 +12,7 @@ type Props = {
 
 const Layout = ({ children, title = "Infinita Conceling" }: Props) => (
   <html lang="id" className="scroll-smooth">
-    <head>
+    <Head>
       <meta name="viewport" content="viewport-fit=cover" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -23,7 +23,7 @@ const Layout = ({ children, title = "Infinita Conceling" }: Props) => (
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
       <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet" />
-    </head>
+    </Head>
     <body className="bg-white">
       <main>
         <Navbar />

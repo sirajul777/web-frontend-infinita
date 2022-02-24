@@ -9,9 +9,17 @@ module.exports = {
   async headers() {
     return [
       {
-        // Apply these headers to all routes in your application.
-        source: "/:path*",
-        headers: securityHeaders,
+        source: "/about",
+        headers: [
+          {
+            key: "x-custom-header",
+            value: "my custom header value",
+          },
+          {
+            key: "x-another-custom-header",
+            value: "my other custom header value",
+          },
+        ],
       },
     ];
   },
