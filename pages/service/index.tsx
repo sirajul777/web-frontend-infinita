@@ -2,7 +2,7 @@ import Layout from "../../components/Layout";
 import { Hero3 } from "../../public/assets";
 import Image from "next/image";
 
-const service_pages = () => {
+const index = () => {
   return (
     <Layout>
       <div id="hero_service" className="relative">
@@ -14,4 +14,4 @@ const service_pages = () => {
   );
 };
 
-export default service_pages;
+export default index;
