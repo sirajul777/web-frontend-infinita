@@ -11,6 +11,7 @@ const navigation: any[] = [
   { name: "About", href: "/about", current: false },
   { name: "Service", href: "/service", current: false },
   { name: "Blog", href: "/blog", current: false },
+  { name: "Contact", href: "/contact", current: false },
 ];
 
 export default function Navbar() {
