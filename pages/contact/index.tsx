@@ -42,8 +42,6 @@ class index extends Component {
             <div className="grid grid-rows-auto">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.16320751041!2d106.6358307147692!3d-6.242210195481561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fbf3ea31d7cf%3A0xc495e98772f2be67!2sInfinita%20Consulting!5e0!3m2!1sen!2sid!4v1650091372894!5m2!1sen!2sid"
-                // width="100%"
-                // height="600px"
                 allowFullScreen={false}
                 loading="lazy"
                 className=" w-full md:h-[600px] h-[300px]"

@@ -66,6 +66,9 @@ module.exports = {
         ".bg-primary": {
           "background-color": "#8B4F0F",
         },
+        ".bg-bronz": {
+          "background-color": "#FBE097",
+        },
         ".text-primary": {
           color: "#8B4F0F",
         },
